@@ -41,7 +41,7 @@ if b1:
         st.image(popular_df.iloc[i,2])
         st.write(popular_df.iloc[i,0],"by",popular_df.iloc[i][1])
 
-input=st.selectbox("Select Book and click on get reccomendation button",options=list(popular_df["Book-Title"]),key=count)
+input=st.selectbox("Select Book and click on get reccomendation button on the sidebar",options=list(popular_df["Book-Title"]),key=count)
 if b2:
     list=recommend(str(input))
     count+=1
